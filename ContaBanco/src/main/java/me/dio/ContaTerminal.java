@@ -1,26 +1,53 @@
 package me.dio;
 
-import java.util.Scanner;
-
 public class ContaTerminal {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
-        System.out.println("Por favor, digite o número da conta!");
-        int numero = input.nextInt();
-        input.nextLine();
+    private int numero;
+    private String agencia;
+    private String nomeDoCliente;
+    private double saldo;
 
-        System.out.println("Por favor, digite o numero da agencia!");
-        String agencia = input.nextLine();
+    public ContaTerminal(int numero, String agencia, String nomeDoCliente, double saldo) {
+        this.numero = numero;
+        this.agencia = agencia;
+        this.nomeDoCliente = nomeDoCliente;
+        this.saldo = saldo;
+    }
 
-        System.out.println("Por favor, digite o nome do cliente!");
-        String nomeDoCliente = input.nextLine();
+    public int getNumero() {
+        return numero;
+    }
 
-        System.out.println("Por favor, digite o saldo da conta!");
-        Double saldo = input.nextDouble();
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
 
-        System.out.printf("\nOlá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo R$ %.2f já está disponível para saque.\n", nomeDoCliente, agencia, numero, saldo);
+    public String getAgencia() {
+        return agencia;
+    }
 
-        input.close();
+    public void setAgencia(String agencia) {
+        this.agencia = agencia;
+    }
+
+    public String getNomeDoCliente() {
+        return nomeDoCliente;
+    }
+
+    public void setNomeDoCliente(String nomeDoCliente) {
+        this.nomeDoCliente = nomeDoCliente;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public void exibirInformacoes() {
+        System.out.printf("\nOlá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo R$ %.2f já está disponível para saque.\n",
+                nomeDoCliente, agencia, numero, saldo);
     }
 }
