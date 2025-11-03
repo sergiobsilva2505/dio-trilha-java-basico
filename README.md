@@ -1,52 +1,90 @@
-# 🧮 Desafio Controle de Fluxo — Java
+Perfeito 👏 — excelente ideia!
+Criar um **README principal** para a pasta `dio-trilha-java-basico` é uma ótima prática:
+ele serve como um **índice** (hub) dos projetos, descrevendo o propósito geral da trilha e listando os módulos já concluídos, prontos para exibir no GitHub.
 
-## 📘 Descrição
-
-Este projeto faz parte de um exercício prático sobre **controle de fluxo em Java**, abordando o uso de **estruturas condicionais**, **laços de repetição**, **exceções customizadas** e **boas práticas de programação orientada a objetos**.
-
-O objetivo é receber dois números inteiros via terminal, validar a relação entre eles e imprimir uma sequência incremental, respeitando as regras de negócio.
+Aqui está o **README.md unificado**, escrito em formato profissional, limpo e expansível — pronto para você colocar na raiz de `/dio-trilha-java-basico/`.
 
 ---
 
-## 🚀 Funcionalidades
+# ☕ Trilha Java Básico — DIO
 
-* ✅ Leitura de dois números inteiros via terminal (`Scanner`)
-* ✅ Cálculo da diferença entre os parâmetros
-* ✅ Impressão sequencial de números
-* ✅ Lançamento de exceção customizada (`ParametrosInvalidosException`)
-* ✅ Tratamento de erro com mensagem amigável
-* ✅ Testes unitários (JUnit 5) cobrindo todos os fluxos possíveis
+## 📘 Sobre a trilha
 
----
+Este repositório reúne todos os projetos desenvolvidos durante a **Trilha Java Básico da [Digital Innovation One (DIO)](https://www.dio.me)**.
+O objetivo é consolidar o aprendizado de **sintaxe Java, controle de fluxo, POO (Programação Orientada a Objetos)** e outras bases da linguagem, através de pequenos projetos práticos e incrementais.
+
+Cada módulo contém um exercício completo, com código comentado, boas práticas aplicadas e, em alguns casos, **testes automatizados com JUnit**.
 
 ---
 
-## 🧩 Estrutura do projeto
+## 📂 Estrutura do repositório
 
 ```
-src/
- ├── main/java/me/dio/
- │    ├── Contador.java
- │    ├── ParametrosInvalidosException.java
- │    └── Main.java
- └── test/java/me/dio/
-      └── ContadorTest.java
+dio-trilha-java-basico/
+├── conta-terminal/
+│   ├── src/
+│   └── README.md
+├── desafio-controle-fluxo/
+│   ├── src/
+│   └── README.md
+└── (novos projetos serão adicionados futuramente)
 ```
 
-## 🧰 Como executar
+---
 
-### 🖥️ Via terminal
+## 🧱 Projetos já concluídos
 
-```bash
-mvn clean compile exec:java -Dexec.mainClass="me.dio.Main"
+### 🔹 1. [Conta Terminal](./conta-terminal/README.md)
+
+**Módulo:** Sintaxe Java Básico
+**Descrição:**
+Simula a criação de uma conta bancária via terminal.
+O usuário informa número, agência, nome e saldo, e o sistema exibe uma mensagem personalizada.
+
+**Conceitos aplicados:**
+
+* Entrada de dados com `Scanner`
+* Tipos primitivos e `String`
+* Construtores e encapsulamento
+* `System.out.printf` para formatação de saída
+
+**Exemplo de execução:**
+
+```
+Por favor, digite o número da conta!
+1021
+Por favor, digite o número da agência!
+067-8
+Por favor, digite o nome do cliente!
+MARIO ANDRADE
+Por favor, digite o saldo da conta!
+237.48
+Olá MARIO ANDRADE, obrigado por criar uma conta em nosso banco, sua agência é 067-8, conta 1021 e seu saldo R$ 237.48 já está disponível para saque.
 ```
 
-### 💬 Exemplo de execução
+---
+
+### 🔹 2. [Desafio Controle de Fluxo](./desafio-controle-fluxo/README.md)
+
+**Módulo:** Controle de Fluxo
+**Descrição:**
+Recebe dois números inteiros e imprime uma sequência incremental com base na diferença entre eles.
+Lança uma exceção customizada (`ParametrosInvalidosException`) se o primeiro número for maior que o segundo.
+
+**Conceitos aplicados:**
+
+* Estruturas de decisão (`if/else`)
+* Laço `for`
+* Exceções personalizadas (`extends Exception`)
+* Classe utilitária com método estático
+* Testes automatizados com **JUnit 5**
+
+**Exemplo de execução:**
 
 ```
-Digite o primeiro parâmetro
+Digite o primeiro parâmetro:
 12
-Digite o segundo parâmetro
+Digite o segundo parâmetro:
 15
 Imprimindo o número 1
 Imprimindo o número 2
@@ -56,38 +94,65 @@ Programa finalizado
 
 ---
 
-## 🧪 Executando os testes
+## 🧩 Próximos módulos (em desenvolvimento)
+
+| Módulo                     | Projeto     | Status |
+| -------------------------- | ----------- | ------ |
+| 🔸 Estruturas de Repetição | Em breve... | 🕓     |
+| 🔸 Estruturas de Dados     | Em breve... | 🕓     |
+| 🔸 Desafio POO             | Em breve... | 🕓     |
+| 🔸 API e Testes            | Em breve... | 🕓     |
+
+*(Os novos projetos seguirão o mesmo padrão de organização e documentação dos atuais.)*
+
+---
+
+## ⚙️ Requisitos para executar os projetos
+
+* ☕ **Java 17+** instalado
+* 🧰 (Opcional) **Maven 3.9+** — caso queira rodar via `mvn exec:java`
+* 💻 Terminal / IDE de sua preferência (IntelliJ, VS Code, Eclipse, etc.)
+
+---
+
+## 🧪 Execução via terminal
+
+### Compilar:
 
 ```bash
-mvn test
+javac me/dio/*.java
 ```
 
-Saída esperada:
+### Executar:
 
+```bash
+java me.dio.BancoApp
 ```
-[INFO] Results:
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
-[INFO] BUILD SUCCESS
+
+ou, no projeto de controle de fluxo:
+
+```bash
+java me.dio.Main
 ```
 
 ---
 
-## 💡 Boas práticas aplicadas
+## 🧱 Boas práticas aplicadas em todos os projetos
 
-| Prática                                               | Descrição                          |
-| ----------------------------------------------------- | ---------------------------------- |
-| ✅ Classe utilitária `Contador` com construtor privado | Impede instanciação indevida       |
-| ✅ Exceção customizada `ParametrosInvalidosException`  | Regras de negócio encapsuladas     |
-| ✅ Tratamento de exceção amigável no `Main`            | Melhora experiência do usuário     |
-| ✅ Testes unitários abrangentes                        | Garantem confiabilidade            |
-| ✅ Código limpo e legível                              | Fácil manutenção e extensão futura |
+| Prática                          | Descrição                                       |
+| -------------------------------- | ----------------------------------------------- |
+| ✅ Encapsulamento                 | Atributos privados e acesso via getters/setters |
+| ✅ Separação de responsabilidades | Cada classe tem uma única função clara          |
+| ✅ Código limpo                   | Nomeação clara e padronizada                    |
+| ✅ Comentários essenciais         | Código autoexplicativo e bem documentado        |
+| ✅ Testes automatizados           | Garantem a qualidade e evitam regressões        |
 
 ---
 
 ## 👨‍💻 Autor
 
 **Sérgio Bezerra da Silva**
-📍 Desenvolvedor Java 
+📍 Desenvolvedor Java
 📫 [LinkedIn](https://www.linkedin.com/in/sergio-bezerra-da-silva-programador-desenvolvedor/) | [GitHub](https://github.com/sergiobsilva2505)
 
 ---
