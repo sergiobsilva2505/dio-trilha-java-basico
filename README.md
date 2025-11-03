@@ -26,7 +26,7 @@ dio-trilha-java-basico/
 
 ## 🧱 Projetos já concluídos
 
-### 🔹 1. [Conta Terminal](./conta-terminal/README.md)
+### 🔹 1. [Conta Terminal](./ContaBanco)
 
 **Módulo:** Sintaxe Java Básico
 **Descrição:**
@@ -56,7 +56,7 @@ Olá MARIO ANDRADE, obrigado por criar uma conta em nosso banco, sua agência é
 
 ---
 
-### 🔹 2. [Desafio Controle de Fluxo](./desafio-controle-fluxo/README.md)
+### 🔹 2. [Desafio Controle de Fluxo](./DesafioControleFluxo)
 
 **Módulo:** Controle de Fluxo
 **Descrição:**
@@ -140,6 +140,7 @@ java me.dio.Main
 | ✅ Testes automatizados           | Garantem a qualidade e evitam regressões        |
 
 ---
+
 
 ## 👨‍💻 Autor
 
