@@ -85,5 +85,3 @@ java me.dio.BancoApp
 | ✅ **Código limpo**            | Variáveis e métodos com nomes intuitivos                         |
 | ✅ **Formatação profissional** | Uso de `printf` com duas casas decimais                          |
 | ✅ **Fechamento de recursos**  | `Scanner` fechado ao final                                       |
-
----

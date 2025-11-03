@@ -81,5 +81,3 @@ Saída esperada:
 | ✅ Tratamento de exceção amigável no `Main`            | Melhora experiência do usuário     |
 | ✅ Testes unitários abrangentes                        | Garantem confiabilidade            |
 | ✅ Código limpo e legível                              | Fácil manutenção e extensão futura |
-
----

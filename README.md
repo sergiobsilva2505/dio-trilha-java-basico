@@ -1,11 +1,3 @@
-Perfeito 👏 — excelente ideia!
-Criar um **README principal** para a pasta `dio-trilha-java-basico` é uma ótima prática:
-ele serve como um **índice** (hub) dos projetos, descrevendo o propósito geral da trilha e listando os módulos já concluídos, prontos para exibir no GitHub.
-
-Aqui está o **README.md unificado**, escrito em formato profissional, limpo e expansível — pronto para você colocar na raiz de `/dio-trilha-java-basico/`.
-
----
-
 # ☕ Trilha Java Básico — DIO
 
 ## 📘 Sobre a trilha
@@ -154,5 +146,3 @@ java me.dio.Main
 **Sérgio Bezerra da Silva**
 📍 Desenvolvedor Java
 📫 [LinkedIn](https://www.linkedin.com/in/sergio-bezerra-da-silva-programador-desenvolvedor/) | [GitHub](https://github.com/sergiobsilva2505)
-
----
