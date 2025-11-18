@@ -86,6 +86,40 @@ Programa finalizado
 
 ---
 
+### 🔹 3. [Exerciccio Abstração e Encapsulamento](./ExercAbstracaoEncapsulamento)
+
+**Módulo:** Programação Orientada a Objetos — Encapsulamento
+**Descrição:**
+Simula uma conta bancária completa utilizando princípios de **encapsulamento**, **exceções customizadas** e **regras internas protegidas**.
+O usuário interage via menu no terminal e pode consultar saldo, sacar, depositar, pagar boletos e utilizar automaticamente o cheque especial.
+
+**Conceitos aplicados:**
+
+* Encapsulamento de atributos e regras de negócio
+* Métodos públicos controlando acesso ao estado interno
+* Exceções personalizadas (`SaldoInsuficienteException`, `ValorInvalidoException`)
+* Menu interativo com `Scanner`
+* Regras de cálculo do cheque especial
+* Tratamento de erros com mensagens claras
+
+**Exemplo de execução:**
+
+```
+=== MENU CONTA BANCÁRIA ===
+1 - Consultar saldo
+2 - Consultar cheque especial disponível
+3 - Depositar dinheiro
+4 - Sacar dinheiro
+5 - Pagar boleto
+6 - Verificar se está usando cheque especial
+0 - Sair
+Escolha uma opção: 4
+Digite o valor para saque: 1200
+Saque realizado com sucesso.
+```
+
+---
+
 ## 🧩 Próximos módulos (em desenvolvimento)
 
 | Módulo                     | Projeto     | Status |
